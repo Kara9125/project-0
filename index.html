@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- custom styles -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <title>Kara's Blog</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h1 class="text-center">Kara's Blog</h1>
+        <hr>
+        <form class="text-center" id="new-post">
+          <div class="form-group">
+            <input class="form-control" id="post-name" placeholder="Blog Post Title" autofocus>
+          </div>
+          <div class="form-group">
+            <input class="form-control" id="post-desc" placeholder="Write Post">
+          </div>
+          <div class="form-group">
+            <input type="submit" class="btn btn-success" value="Post">
+          </div>
+        </form>
+        <hr>
+        <ul id="post-list"></ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- jquery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <!-- underscore -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+
+  <!-- custom script -->
+  <script type="text/javascript" src="script.js"></script>
+<script type="text/template" id="post-template">
+    <div class="post">
+      <p>
+        <%= title %> - <%= description %>
+      </p>
+      <hr>
+    </div>
+  </script>
+
+</body>
+</html>

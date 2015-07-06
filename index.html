@@ -10,13 +10,20 @@
   <!-- custom styles -->
   <link rel="stylesheet" type="text/css" href="style.css">
 
-  <title>Kara's Blog</title>
+  <!-- <title>Kara's Blog</title> -->
 </head>
 <body>
+  <!-- <div style="background:transparent !important" class="jumbotron"> -->
+  <div  class="jumbotron" style="background-image: url(http://www.intrepidtravel.com/sites/default/files/elements/product/hero/costa_rica_sloth_11.jpg)">
+    <h1 class="text-center">Welcome to Kara's blog!</h1>
+    <p class = "text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    
+  </div>
   <div class="container">
     <div class="row">
+
       <div class="col-md-6 col-md-offset-3">
-        <h1 class="text-center">Kara's Blog</h1>
+        <!-- <h1 class="text-center">Kara's Blog</h1> -->
         <hr>
         <form class="text-center" id="new-post">
           <div class="form-group">
@@ -46,13 +53,13 @@
 
   <!-- custom script -->
   <script type="text/javascript" src="script.js"></script>
-<script type="text/template" id="post-template">
-    <div class="post">
-      <p>
-        <%= title %> - <%= description %>
-      </p>
-      <hr>
-    </div>
+  <script type="text/template" id="post-template">
+  <div class="post">
+  <p>
+  <%= title %> - <%= description %>
+  </p>
+  <hr>
+  </div>
   </script>
 
 </body>
